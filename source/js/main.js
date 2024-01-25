@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initSliders} from './modules/hero-swiper';
-import {initAccordions} from './modules/accordion/init-accordion';
+import {initAccordions} from './accordion/init-accordion';
 
 // ---------------------------------
 
