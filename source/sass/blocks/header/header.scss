@@ -1,0 +1,29 @@
+.header {
+
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo-link {
+  width: 52px;
+  height: 52px;
+  padding: 10px;
+  background-color: $color-default-white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__list {
+  @include list;
+}
+
+
+.header__sub-list {
+  @include list;
+  padding-left: 20px;
+}

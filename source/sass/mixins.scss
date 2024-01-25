@@ -9,3 +9,32 @@
     @content;
   }
 }
+
+@mixin list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  @content;
+}
+
+@mixin hover-focus {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin active {
+  &:active,
+  &.is-active {
+    @content;
+  }
+}
+
+@mixin disabled {
+  &:disabled,
+  &.is-disabled {
+    @content;
+  }
+}
