@@ -16,15 +16,24 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="container">
+      <div class="header__container container">
         <div class="header__logo">
-          <img src="/__spritemap#sprite-logo">
+          <a class="header__logo-link" href="#" aria-label="Логотип проекта стажировок.">
+            <svg width="30" height="30">
+              <use href="/__spritemap#sprite-logotype"></use>
+            </svg>
+          </a>
         </div>
         <div class="header__wrapper">
           <button class="header__button btn">
-            <span>Меню</span>
+            <span class="btn__text">Меню</span>
+            <div class="btn__icon">
+              <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+                <use href="/__spritemap#sprite-menu"></use>
+              </svg>
+            </div>
           </button>
-          <nav class="header__nav">
+          <nav class="header__nav" aria-label="Главная навигация.">
             <ul class="header__list">
               <li class="header__item"><a class="header__item-link" href="#">О проекте</a></li>
               <li class="header__item header__item--sub-menu">
