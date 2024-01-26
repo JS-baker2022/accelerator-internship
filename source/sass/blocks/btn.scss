@@ -7,9 +7,17 @@
   transition: opacity $trans-default;
   border: 1px solid $color-cerulean-blue;
   color: $color-cerulean-blue;
+  box-sizing: border-box;
 
   &:focus {
     outline: none;
+  }
+
+  &--burger {
+    gap: 20px;
+    padding: 4px 3px 4px 20px;
+    border-radius: 30px;
+    background-color: $color-default-white;
   }
 
   @include disabled {
@@ -18,12 +26,26 @@
   }
 }
 
+.btn__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: .28px;
+  text-transform: uppercase;
+}
 
 .btn__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: $color-default-white;
   background-color: $color-cerulean-blue;
   border-radius: 50%;
-  padding: 18px;
+  padding: 13px;
 
   @include hover-focus {
     color: $color-cerulean-blue;

@@ -1,10 +1,18 @@
 .header {
-
+z-index: 3;
 }
 
 .header__container {
   display: flex;
   justify-content: space-between;
+  padding-top: 29px;
+  position: fixed;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header__logo-link {
@@ -26,4 +34,8 @@
 .header__sub-list {
   @include list;
   padding-left: 20px;
+}
+
+.header__nav {
+  display: none;
 }
