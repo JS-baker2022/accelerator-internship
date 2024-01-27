@@ -1,0 +1,138 @@
+.grant {
+  background-color: $color-cerulean-blue;
+}
+
+.grant__container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+  column-gap: 138px;
+}
+
+.grant__bunner {
+  max-width: 498px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.grant__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  color: $color-default-white;
+
+  @include vp-1439 {
+    font-size: 34px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.grant__description {
+  padding-bottom: 10px;
+}
+
+.grant__description p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: $color-alabaster;
+
+  @include vp-1439 {
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.grant__img {
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grant__conditions {
+  max-width: 498px;
+}
+
+.grant__conditions-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  color: $color-default-white;
+
+  @include vp-1439 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.grant__conditions-list {
+  @include list;
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+  padding-top: 55px;
+  counter-reset: css-counter 0;
+}
+
+.grant__conditions-item {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: $color-alabaster;
+  border: 1px solid $color-alabaster;
+  border-radius: 16px;
+  padding: 30px 25px;
+  counter-increment: css-counter 1;
+  position: relative;
+
+  &::after {
+    content: counter(css-counter) "";
+    position: absolute;
+    top: -20px;
+    left: -15px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.22px;
+    text-transform: uppercase;
+    padding: 14px;
+    background-color: $color-cerulean-blue;
+  }
+
+  @include vp-1439 {
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 24px 25px;
+  }
+}
