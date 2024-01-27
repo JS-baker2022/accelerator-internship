@@ -4,7 +4,6 @@
 @import "vendor/normalize";
 @import "vendor/accordion";
 @import "vendor/data-accordion";
-//@import "vendor/swiper";
 
 
 // Global
@@ -16,7 +15,6 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
-//@import "swiper/css/bundle";
 
 // Blocks
 // ---------------------------------
@@ -24,3 +22,7 @@
 @import "blocks/btn";
 @import "blocks/header/header";
 @import "blocks/hero/hero";
+@import "blocks/about/about";
+@import "blocks/programs/programs";
+@import "blocks/grant/grant";
+@import "blocks/footer/footer";
