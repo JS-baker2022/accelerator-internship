@@ -206,7 +206,7 @@
       </section>
       <section class="programs container" data-test="programs">
         <h2 class="programs__title">Программы</h2>
-        <a class="programs__btn btn" href="#">подробнее о проекте</a>
+        <a class="programs__btn btn" href="#" data-open-modal="about">подробнее о проекте</a>
         <div class="programs__slider-wrapper">
           <ul class="programs__slider">
             <li class="programs__slider-item">
@@ -477,8 +477,37 @@
 
       </section>
       <section class="reviews" data-test="reviews"></section>
-      <div data-test="contacts">contacts</div>
-      <div data-test="form">form</div>
+      <section class="contacts container" data-test="contacts">
+        <div class="contacts__container">
+          <h2 class="contacts__title">Контакты</h2>
+          <address class="contacts__adress">
+            <div class="contacts__adress-content">
+              <h3 class="contacts__adress-title">Центральный офис</h3>
+              <p class="contacts__adress-discription">г. Новосибирск, ул. Щетинкина 68, культурный центр</p>
+            </div>
+            <div class="contacts__adress-phone">
+              <h3 class="contacts__adress-phone-title">Телефон</h3>
+              <a class="contacts__adress-phone-title-link" href="tel:+796387687676">+7 963 876 876 76</a>
+            </div>
+            <div class="contacts__adress-email">
+              <h3 class="contacts__adress-email-title">Email</h3>
+              <a class="contacts__adress-email-title-link" href="mailto:Info@stazh.ru">Info@stazh.ru</a>
+            </div>
+          </address>
+        </div>
+        <div class="contacts__img">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" width="230" height="240" srcset="img/contacts/map-mobile@1x.webp 1x, img/contacts/map-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1439px)" width="678" height="500" srcset="img/contacts/map-tablet@1x.webp 1x, img/contacts/map-tablet@2x.webp 2x">
+            <source type="image/webp" width="1240" height="500" srcset="img/contacts/map-desktop@1x.webp 1x, img/contacts/map-desktop@2x.webp 2x">
+            <source type="image/jpeg" media="(max-width: 767px)" width="230" height="240" srcset="img/news/contacts/map-mobile@1x.jpg 1x, img/contacts/map-mobile@2x.jpg 2x">
+            <source type="image/jpeg" media="(max-width: 1439px)" width="678" height="500" srcset="img/contacts/map-tablet@1x.jpg 1x, img/contacts/map-tablet@2x.jpg 2x">
+            <img src="img/contacts/map-desktop@1x.jpg" width="1240" height="500" srcset="img/contacts/map-desktop@2x.jpg 2x" alt="Рабочее место мечты с тремя ноутбуками чаем и печеньками.">
+          </picture>
+        </div>
+
+      </section>
+      <section data-test="form">form</section>
     </main>
     <footer>
       <section class="footer" data-test="footer">
@@ -547,6 +576,15 @@
         </div>
       </section>
     </footer>
+    <div class="modal modal--preload" data-modal="about">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal="data-close-modal">
+          <div class="modal__content">
+            <button class="modal__close-btn btn" type="button" aria-label="Закрыть модальное окно." data-close-modal="data-close-modal" data-focus="data-focus">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <script type="module" src="js/main.js"></script>
 </body>
