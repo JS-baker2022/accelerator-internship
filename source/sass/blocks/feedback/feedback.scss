@@ -1,0 +1,155 @@
+.feedback {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.feedback__container {
+  width: 100%;
+  max-width: $vp-1440;
+  margin: 0 auto;
+  padding: 0 100px;
+  display: grid;
+
+  @include vp-1439 {
+    max-width: $vp-768;
+    padding: 0 45px;
+  }
+
+  @include vp-767 {
+    max-width: $vp-320;
+    padding: 0;
+    justify-items: center;
+  }
+
+}
+
+.feedback__text-content {
+  grid-area: 1 / -1;
+  width: 498px;
+  padding: 70px 74px;
+  border-radius: 16px 0 0 16px;
+  background-color: $color-cerulean-blue;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include vp-1439 {
+    padding: 50px 45px;
+    width: 442px;
+
+  }
+
+  @include vp-767 {
+    padding: 50px 15px;
+    border-radius: 16px;
+    width: 290px;
+    }
+}
+
+.feedback__title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  color: $color-default-white;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include vp-1439 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.feedback__info {
+  color: $color-alabaster;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include vp-1439 {
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.feedback__form {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feedback__label {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  &--checkbox {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+.feedback__textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feedback__select-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feedback__label-name {
+  color: $color-alabaster;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+
+  @include vp-1439 {
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.feedback__control-label {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  color: $color-default-white;
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.feedback_img {
+  border-radius: 16px;
+  z-index: -1;
+  grid-area: 1 / -1;
+}
+
+.feedback_img img {
+  width: 100%;
+}

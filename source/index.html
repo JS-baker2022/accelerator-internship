@@ -70,7 +70,7 @@
     <main>
       <h1 class="visually-hidden">Проект "Стажировка".</h1>
       <section class="hero" data-test="slider">
-        <div class="hero__slider-wrapper" data-swiper="slider">
+        <div class="hero__slider-wrapper swiper" data-swiper="slider">
           <ul class="hero__slider swiper-wrapper">
             <li class="hero__slider-item swiper-slide">
               <div class="hero__slider-item-wrapper container">
@@ -480,9 +480,185 @@
         </div>
 
       </section>
-      <section class="reviews" data-test="reviews"></section>
-      <section class="contacts container" data-test="contacts">
-        <div class="contacts__container">
+      <section class="reviews" data-test="reviews">
+        <div class="container">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__slider swiper" data-swiper="reviews">
+            <ul class="reviews__list swiper-wrapper">
+              <li class="reviews__item swiper-slide">
+                <div class="reviews__item-author-info">
+                  <div class="reviews__item-author-img">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="60" height="60" srcset="img/reviews/avatar-1-mobile@1x.webp 1x, img/reviews/avatar-1-mobile@2x.webp 2x">
+                      <source type="image/webp" width="90" height="90" srcset="img/reviews/avatar-1-desktop@1x.webp 1x, img/reviews/avatar-1-desktop@2x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="60" height="60" srcset="img/reviews/avatar-1-mobile@1x.jpg 1x, img/reviews/avatar-1-mobile@2x.jpg 2x">
+                      <img src="img/reviews/avatar-1-desktop@1x.jpg" width="90" height="90" srcset="img/reviews/avatar-1-desktop@2x.jpg 2x" alt="Аватарка автора отзыва.">
+                    </picture>
+                  </div>
+                  <div class="reviews__item-author-name text-content">
+                    <span>Лола</span>
+                    <span>Алекс</span>
+                  </div>
+                  <div class="reviews__item-author-program">
+                    <h3>программа</h3>
+                    <p>Masa Art Challenge</p>
+                  </div>
+                  <div class="reviews__item-author-time">
+                    <h3>Дата</h3>
+                    <p>Осень 2022</p>
+                  </div>
+                </div>
+                <div class="reviews__item-article text-content">
+                  <h3>Я могу с уверенностью сказать, что это был один из самых незабываемых опытов в жизни!</h3>
+                  <p>Я рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления. Сочетание путешествий, общения и значимой работы действительно отличает её от других программ, и я чувствую огромную благодарность за предоставленную мне возможность.</p>
+                </div>
+              </li>
+              <li class="reviews__item swiper-slide">
+                <div class="reviews__item-author-info">
+                  <div class="reviews__item-author-img">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="60" height="60" srcset="img/reviews/avatar-2-mobile@1x.webp 1x, img/reviews/avatar-2-mobile@2x.webp 2x">
+                      <source type="image/webp" width="90" height="90" srcset="img/reviews/avatar-2-desktop@1x.webp 1x, img/reviews/avatar-2-desktop@2x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="60" height="60" srcset="img/reviews/avatar-2-mobile@1x.jpg 1x, img/reviews/avatar-2-mobile@2x.jpg 2x">
+                      <img src="img/reviews/avatar-2-desktop@1x.jpg" width="90" height="90" srcset="img/reviews/avatar-2-desktop@2x.jpg 2x" alt="Аватарка автора отзыва.">
+                    </picture>
+                  </div>
+                  <div class="reviews__item-author-name text-content">
+                    <span>Давид</span>
+                    <span>Иванов</span>
+                  </div>
+                  <div class="reviews__item-author-program">
+                    <h3>программа</h3>
+                    <p>Volunteer Chance</p>
+                  </div>
+                  <div class="reviews__item-author-time">
+                    <h3>Дата</h3>
+                    <p>Лето 2022</p>
+                  </div>
+                </div>
+                <div class="reviews__item-article text-content">
+                  <h3>Благодаря опыту стажировки я узнал так много нового о себе и об окружающем мире.</h3>
+                  <p>Каждый день был возможностью оказать ощутимое влияние на жизнь других людей. Я бы очень рекомендовал эту волонтёрскую программу всем, кто ищет значимый и незабываемый опыт. Организация была на высшем уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
+                </div>
+              </li>
+              <li class="reviews__item swiper-slide">
+                <div class="reviews__item-author-info">
+                  <div class="reviews__item-author-img">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="60" height="60" srcset="img/reviews/avatar-1-mobile@1x.webp 1x, img/reviews/avatar-1-mobile@2x.webp 2x">
+                      <source type="image/webp" width="90" height="90" srcset="img/reviews/avatar-1-desktop@1x.webp 1x, img/reviews/avatar-1-desktop@2x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="60" height="60" srcset="img/reviews/avatar-1-mobile@1x.jpg 1x, img/reviews/avatar-1-mobile@2x.jpg 2x">
+                      <img src="img/reviews/avatar-1-desktop@1x.jpg" width="90" height="90" srcset="img/reviews/avatar-1-desktop@2x.jpg 2x" alt="Аватарка автора отзыва.">
+                    </picture>
+                  </div>
+                  <div class="reviews__item-author-name text-content">
+                    <span>Лола2</span>
+                    <span>Алекс2</span>
+                  </div>
+                  <div class="reviews__item-author-program">
+                    <h3>программа</h3>
+                    <p>Masa Art Challenge</p>
+                  </div>
+                  <div class="reviews__item-author-time">
+                    <h3>Дата</h3>
+                    <p>Осень 2022</p>
+                  </div>
+                </div>
+                <div class="reviews__item-article text-content">
+                  <h3>Я могу с уверенностью сказать, что это был один из самых незабываемых опытов в жизни!</h3>
+                  <p>Я рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления. Сочетание путешествий, общения и значимой работы действительно отличает её от других программ, и я чувствую огромную благодарность за предоставленную мне возможность.</p>
+                </div>
+              </li>
+              <li class="reviews__item swiper-slide">
+                <div class="reviews__item-author-info">
+                  <div class="reviews__item-author-img">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="60" height="60" srcset="img/reviews/avatar-2-mobile@1x.webp 1x, img/reviews/avatar-2-mobile@2x.webp 2x">
+                      <source type="image/webp" width="90" height="90" srcset="img/reviews/avatar-2-desktop@1x.webp 1x, img/reviews/avatar-2-desktop@2x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="60" height="60" srcset="img/reviews/avatar-2-mobile@1x.jpg 1x, img/reviews/avatar-2-mobile@2x.jpg 2x">
+                      <img src="img/reviews/avatar-2-desktop@1x.jpg" width="90" height="90" srcset="img/reviews/avatar-2-desktop@2x.jpg 2x" alt="Аватарка автора отзыва.">
+                    </picture>
+                  </div>
+                  <div class="reviews__item-author-name text-content">
+                    <span>Давид2</span>
+                    <span>Иванов2</span>
+                  </div>
+                  <div class="reviews__item-author-program">
+                    <h3>программа</h3>
+                    <p>Volunteer Chance</p>
+                  </div>
+                  <div class="reviews__item-author-time">
+                    <h3>Дата</h3>
+                    <p>Лето 2022</p>
+                  </div>
+                </div>
+                <div class="reviews__item-article text-content">
+                  <h3>Благодаря опыту стажировки я узнал так много нового о себе и об окружающем мире.</h3>
+                  <p>Каждый день был возможностью оказать ощутимое влияние на жизнь других людей. Я бы очень рекомендовал эту волонтёрскую программу всем, кто ищет значимый и незабываемый опыт. Организация была на высшем уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
+                </div>
+              </li>
+              <li class="reviews__item swiper-slide">
+                <div class="reviews__item-author-info">
+                  <div class="reviews__item-author-img">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="60" height="60" srcset="img/reviews/avatar-1-mobile@1x.webp 1x, img/reviews/avatar-1-mobile@2x.webp 2x">
+                      <source type="image/webp" width="90" height="90" srcset="img/reviews/avatar-1-desktop@1x.webp 1x, img/reviews/avatar-1-desktop@2x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="60" height="60" srcset="img/reviews/avatar-1-mobile@1x.jpg 1x, img/reviews/avatar-1-mobile@2x.jpg 2x">
+                      <img src="img/reviews/avatar-1-desktop@1x.jpg" width="90" height="90" srcset="img/reviews/avatar-1-desktop@2x.jpg 2x" alt="Аватарка автора отзыва.">
+                    </picture>
+                  </div>
+                  <div class="reviews__item-author-name text-content">
+                    <span>Лола3</span>
+                    <span>Алекс3</span>
+                  </div>
+                  <div class="reviews__item-author-program">
+                    <h3>программа</h3>
+                    <p>Masa Art Challenge</p>
+                  </div>
+                  <div class="reviews__item-author-time">
+                    <h3>Дата</h3>
+                    <p>Осень 2022</p>
+                  </div>
+                </div>
+                <div class="reviews__item-article text-content">
+                  <h3>Я могу с уверенностью сказать, что это был один из самых незабываемых опытов в жизни!</h3>
+                  <p>Я рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления. Сочетание путешествий, общения и значимой работы действительно отличает её от других программ, и я чувствую огромную благодарность за предоставленную мне возможность.</p>
+                </div>
+              </li>
+              <li class="reviews__item swiper-slide">
+                <div class="reviews__item-author-info">
+                  <div class="reviews__item-author-img">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="60" height="60" srcset="img/reviews/avatar-1-mobile@1x.webp 1x, img/reviews/avatar-1-mobile@2x.webp 2x">
+                      <source type="image/webp" width="90" height="90" srcset="img/reviews/avatar-1-desktop@1x.webp 1x, img/reviews/avatar-1-desktop@2x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="60" height="60" srcset="img/reviews/avatar-1-mobile@1x.jpg 1x, img/reviews/avatar-1-mobile@2x.jpg 2x">
+                      <img src="img/reviews/avatar-1-desktop@1x.jpg" width="90" height="90" srcset="img/reviews/avatar-1-desktop@2x.jpg 2x" alt="Аватарка автора отзыва.">
+                    </picture>
+                  </div>
+                  <div class="reviews__item-author-name text-content">
+                    <span>Давид4</span>
+                    <span>Иванов4</span>
+                  </div>
+                  <div class="reviews__item-author-program">
+                    <h3>программа</h3>
+                    <p>Volunteer Chance</p>
+                  </div>
+                  <div class="reviews__item-author-time">
+                    <h3>Дата</h3>
+                    <p>Лето 2022</p>
+                  </div>
+                </div>
+                <div class="reviews__item-article text-content">
+                  <h3>Благодаря опыту стажировки я узнал так много нового о себе и об окружающем мире.</h3>
+                  <p>Каждый день был возможностью оказать ощутимое влияние на жизнь других людей. Я бы очень рекомендовал эту волонтёрскую программу всем, кто ищет значимый и незабываемый опыт. Организация была на высшем уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="contacts" data-test="contacts">
+        <div class="contacts__container container">
           <h2 class="contacts__title">Контакты</h2>
           <address class="contacts__adress">
             <div class="contacts__adress-content">
@@ -511,7 +687,55 @@
         </div>
 
       </section>
-      <section data-test="form">form</section>
+      <section class="feedback" data-test="form">
+        <div class="feedback__container">
+          <div class="feedback__text-content">
+            <h2 class="feedback__title">Напишите нам</h2>
+            <p class="feedback__info">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+            <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post" data-form="form-primary">
+              <label class="feedback__label">
+                <span class="feedback__label-name">Имя</span>
+                <input type="text">
+              </label>
+              <label class="feedback__label">
+                <span class="feedback__label-name">Телефон</span>
+                <input type="tel">
+              </label>
+              <div class="feedback__textarea-wrapper">
+                <label class="feedback__label" for="note"><span class="feedback__label-name">Ваше сообщение</span></label>
+                <textarea name="note" id="note" rows="5"></textarea>
+              </div>
+              <div class="feedback__select-wrapper">
+                <label class="feedback__label" for="city-select"><span class="feedback__label-name">Выберите город</span></label>
+                <select name="city" id="city-select">
+                  <option value="" selected disabled></option>
+                  <option value="petersburg">Санкт-Петербург</option>
+                  <option value="samara">Самара</option>
+                  <option value="perm">Пермь</option>
+                  <option value="novosibirsk">Новосибирск</option>
+                </select>
+              </div>
+              <label class="feedback__label feedback__label--checkbox">
+                <input type="checkbox" required>
+                <span class="feedback__control-mark"></span>
+                <span class="feedback__control-label">Я согласен на обработку моих персональных данных</span>
+              </label>
+              <button type="submit"><span>отправить</span></button>
+            </form>
+          </div>
+          <div class="feedback_img">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" width="320" height="753" srcset="img/feedback/city-mobile@1x.webp 1x, img/feedback/city-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1439px)" width="678" height="780" srcset="img/feedback/city-tablet@1x.webp 1x, img/feedback/city-tablet@2x.webp 2x">
+              <source type="image/webp" width="1240" height="803" srcset="img/feedback/city-desktop@1x.webp 1x, img/feedback/city-desktop@2x.webp 2x">
+              <source type="image/jpeg" media="(max-width: 767px)" width="320" height="753" srcset="img/feedback/city-mobile@1x.jpg 1x, img/feedback/city-mobile@2x.jpg 2x">
+              <source type="image/jpeg" media="(max-width: 1439px)" width="678" height="780" srcset="img/feedback/city-tablet@1x.jpg 1x, img/feedback/city-tablet@2x.jpg 2x">
+              <img src="img/feedback/city-desktop@1x.jpg" width="1240" height="803" srcset="img/feedback/city-desktop@2x.jpg 2x" alt="Рабочее место мечты с тремя ноутбуками чаем и печеньками.">
+            </picture>
+          </div>
+        </div>
+
+      </section>
     </main>
     <footer>
       <section class="footer" data-test="footer">
@@ -580,12 +804,12 @@
         </div>
       </section>
     </footer>
-    <div class="modal modal--preload" data-modal="about">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal="data-close-modal">
-          <div class="modal__content">
-            <button class="modal__close-btn btn" type="button" aria-label="Закрыть модальное окно." data-close-modal="data-close-modal" data-focus="data-focus">Закрыть</button>
-          </div>
+  </div>
+  <div class="modal modal--preload" data-modal="about">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal="data-close-modal">
+        <div class="modal__content">
+          <button class="modal__close-btn btn" type="button" aria-label="Закрыть модальное окно." data-close-modal="data-close-modal" data-focus="data-focus">Закрыть</button>
         </div>
       </div>
     </div>
