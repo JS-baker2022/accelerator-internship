@@ -1,5 +1,5 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initSliders} from './modules/hero-swiper';
+import {initSliders} from './modules/init-swipers';
 import {initAccordions} from './accordion/init-accordion';
 
 // ---------------------------------
