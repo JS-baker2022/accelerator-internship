@@ -211,9 +211,9 @@
       <section class="programs container" data-test="programs">
         <h2 class="programs__title">Программы</h2>
         <a class="programs__btn btn" href="#" data-open-modal="about">подробнее о проекте</a>
-        <div class="programs__slider-wrapper">
-          <ul class="programs__slider">
-            <li class="programs__slider-item">
+        <div class="programs__slider-wrapper swiper" data-swiper="programs">
+          <ul class="programs__slider swiper-wrapper">
+            <li class="programs__slider-item swiper-slide">
               <div class="programs__slider-item-wrapper">
                 <div class="programs__slider-item-title text-content"></div>
                 <div class="programs__slider-item-description text-content"></div>
@@ -230,7 +230,7 @@
                 </picture>
               </div>
             </li>
-            <li class="programs__slider-item">
+            <li class="programs__slider-item swiper-slide">
               <div class="programs__slider-item-wrapper">
                 <div class="programs__slider-item-title text-content"></div>
                 <div class="programs__slider-item-description text-content"></div>
@@ -247,7 +247,7 @@
                 </picture>
               </div>
             </li>
-            <li class="programs__slider-item">
+            <li class="programs__slider-item swiper-slide">
               <div class="programs__slider-item-wrapper">
                 <div class="programs__slider-item-title text-content"></div>
                 <div class="programs__slider-item-description text-content"></div>
@@ -265,11 +265,12 @@
               </div>
             </li>
           </ul>
-          <div class="programs__slider-scrollbarvh swiper-scrollbar"></div>
           <div class="programs__slider-buttons">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev" data-button="programs-next"></div>
+            <div class="swiper-button-next" data-button="programs-prev"></div>
           </div>
+          <div class="programs__slider-scrollbar swiper-scrollbar"></div>
+
         </div>
       </section>
       <section class="grant" data-test="grant">
@@ -417,60 +418,60 @@
           <h2 class="faq__title">Вопросы и ответы</h2>
           <ul class="faq__list accordion" data-accordion="parent">
             <li class="faq__list-item accordion__element" data-accordion="element">
-              <div class="faq__list-item-title accordion__container">
+              <div class="faq__list-item-title accordion__container" data-accordion="button">
                 <div class="faq__list-item-title-wrapper accordion__preview-title text-content">
                   <h3>Кто организатор? Какие сроки у программы?</h3>
                 </div>
               </div>
-              <div class="faq__list-item-content accordion__content">
+              <div class="faq__list-item-content accordion__content" data-accordion="content">
                 <div class="faq__list-item-content-wrapper accordion__wrapper text-content">
                   <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
                 </div>
               </div>
             </li>
             <li class="faq__list-item accordion__element" data-accordion="element">
-              <div class="faq__list-item-title accordion__container">
+              <div class="faq__list-item-title accordion__container" data-accordion="button">
                 <div class="faq__list-item-title-wrapper accordion__preview-title text-content">
                   <h3>Что такое грант на обучение?</h3>
                 </div>
               </div>
-              <div class="faq__list-item-content accordion__content">
+              <div class="faq__list-item-content accordion__content" data-accordion="content">
                 <div class="faq__list-item-content-wrapper accordion__wrapper text-content">
                   <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
                 </div>
               </div>
             </li>
-            <li class="faq__list-item accordion__element" data-accordion="element">
-              <div class="faq__list-item-title accordion__container">
+            <li class="faq__list-item accordion__element is-active" data-accordion="element">
+              <div class="faq__list-item-title accordion__container" data-accordion="button">
                 <div class="faq__list-item-title-wrapper accordion__preview-title text-content">
                   <h3>Как определяется стоимость программы?</h3>
                 </div>
               </div>
-              <div class="faq__list-item-content accordion__content">
+              <div class="faq__list-item-content accordion__content" data-accordion="content">
                 <div class="faq__list-item-content-wrapper accordion__wrapper text-content">
                   <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
                 </div>
               </div>
             </li>
             <li class="faq__list-item accordion__element" data-accordion="element">
-              <div class="faq__list-item-title accordion__container">
+              <div class="faq__list-item-title accordion__container" data-accordion="button">
                 <div class="faq__list-item-title-wrapper accordion__preview-title text-content">
                   <h3>Признаётся ли учёба в рамках проекта для дальнейшего обучения?</h3>
                 </div>
               </div>
-              <div class="faq__list-item-content accordion__content">
+              <div class="faq__list-item-content accordion__content" data-accordion="content">
                 <div class="faq__list-item-content-wrapper accordion__wrapper text-content">
                   <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
                 </div>
               </div>
             </li>
             <li class="faq__list-item accordion__element" data-accordion="element">
-              <div class="faq__list-item-title accordion__container">
+              <div class="faq__list-item-title accordion__container" data-accordion="button">
                 <div class="faq__list-item-title-wrapper accordion__preview-title text-content">
                   <h3>Как выглядит полный процесс регистрации на программу «Стажировка»?</h3>
                 </div>
               </div>
-              <div class="faq__list-item-content accordion__content">
+              <div class="faq__list-item-content accordion__content" data-accordion="content">
                 <div class="faq__list-item-content-wrapper accordion__wrapper text-content">
                   <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
                 </div>
@@ -677,22 +678,24 @@
         </div>
       </section>
       <section class="contacts" data-test="contacts">
-        <div class="contacts__container container">
-          <h2 class="contacts__title">Контакты</h2>
-          <address class="contacts__adress">
-            <div class="contacts__adress-content">
-              <h3 class="contacts__adress-title">Центральный офис</h3>
-              <p class="contacts__adress-discription">г. Новосибирск, ул. Щетинкина 68, культурный центр</p>
-            </div>
-            <div class="contacts__adress-phone">
-              <h3 class="contacts__adress-phone-title">Телефон</h3>
-              <a class="contacts__adress-phone-title-link" href="tel:+796387687676">+7 963 876 876 76</a>
-            </div>
-            <div class="contacts__adress-email">
-              <h3 class="contacts__adress-email-title">Email</h3>
-              <a class="contacts__adress-email-title-link" href="mailto:Info@stazh.ru">Info@stazh.ru</a>
-            </div>
-          </address>
+        <div class="contacts__grid-containeer container">
+          <div class="contacts__container">
+            <h2 class="contacts__title">Контакты</h2>
+            <address class="contacts__adress">
+              <div class="contacts__adress-content">
+                <h3 class="contacts__adress-title">Центральный офис</h3>
+                <p class="contacts__adress-discription">г. Новосибирск, ул. Щетинкина 68, культурный центр</p>
+              </div>
+              <div class="contacts__adress-phone">
+                <h3 class="contacts__adress-phone-title">Телефон</h3>
+                <a class="contacts__adress-phone-title-link" href="tel:+796387687676">+7 963 876 876 76</a>
+              </div>
+              <div class="contacts__adress-email">
+                <h3 class="contacts__adress-email-title">Email</h3>
+                <a class="contacts__adress-email-title-link" href="mailto:Info@stazh.ru">Info@stazh.ru</a>
+              </div>
+            </address>
+          </div>
         </div>
         <div class="contacts__img">
           <picture>
