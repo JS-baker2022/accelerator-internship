@@ -24,10 +24,10 @@ const setSliderHero = () => new Swiper(heroSlider, {
   },
 });
 
-const initSliders = () => {
+const initSliderHero = () => {
   if (document.body.contains(heroSlider)) {
     setSliderHero();
   }
 };
 
-export {initSliders};
+export {initSliderHero};
