@@ -321,9 +321,9 @@
               <a class="news__navigation-link" href="#">Путешествия</a>
             </li>
           </ul>
-          <div class="news__slider">
-            <ul class="news__slider-list">
-              <li class="news__slider-item">
+          <div class="news__slider swiper" data-swiper="news">
+            <ul class="news__slider-list swiper-wrapper">
+              <li class="news__slider-item swiper-slide">
                 <time data-time="2023-03-23">23/03/2023</time>
                 <div class="news__slider-item-title text-content">
                   <h3>Интервью с участницей программы стажировки</h3>
@@ -343,7 +343,7 @@
                   </picture>
                 </div>
               </li>
-              <li class="news__slider-item">
+              <li class="news__slider-item swiper-slide">
                 <time data-time="2023-03-20">20/03/2023</time>
                 <div class="news__slider-item-title text-content">
                   <h3>Путешествуем по миру</h3>
@@ -363,7 +363,7 @@
                   </picture>
                 </div>
               </li>
-              <li class="news__slider-item">
+              <li class="news__slider-item swiper-slide">
                 <time data-time="2023-03-17">17/03/2023</time>
                 <div class="news__slider-item-title text-content">
                   <h3>Новая программа волонтёрства</h3>
@@ -383,7 +383,7 @@
                   </picture>
                 </div>
               </li>
-              <li class="news__slider-item">
+              <li class="news__slider-item swiper-slide">
                 <time data-time="2023-03-10">10/03/2023</time>
                 <div class="news__slider-item-title text-content">
                   <h3>Построй свою карьеру</h3>
@@ -404,10 +404,10 @@
                 </div>
               </li>
             </ul>
-            <div class="news__slider-nav">
-              <div class="news__slider-button-prev swiper-button-prev"></div>
-              <div class="news__sliderr-pagination swiper-pagination"></div>
-              <div class="news__sliderr-button-next swiper-button-next"></div>
+            <div class="news__slider-nav" >
+              <div class="news__slider-button-prev swiper-button-prev" data-button="news-next"></div>
+              <div class="news__slider-pagination swiper-pagination"></div>
+              <div class="news__slider-button-next swiper-button-next" data-button="news-prev"></div>
             </div>
           </div>
         </div>
@@ -654,6 +654,25 @@
                 </div>
               </li>
             </ul>
+            <div class="reviews__swiper-button-wrapper">
+              <div
+                class="reviews__swiper-button reviews__swiper-button--prev swiper-button swiper-button-prev"
+                data-button="reviews-prev"
+                tabindex="0">
+                <svg width="10" height="10">
+                  <use href="__spritemap#sprite-arrow-swiper"></use>
+                </svg>
+              </div>
+              <div
+                class="reviews__swiper-button reviews__swiper-button--next swiper-button swiper-button-next"
+                data-button="reviews-next"
+                tabindex="0">
+                <svg width="10" height="10">
+                  <use href="__spritemap#sprite-arrow-swiper"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="reviews__swiper-scrollbar swiper-scrollbar"></div>
           </div>
         </div>
       </section>
