@@ -53,16 +53,8 @@
 .faq__list-item {
   border: 1px solid $color-cerulean-blue;
   border-radius: 16px;
-  padding: 40px;
   color: $color-cerulean-blue;
-
-  @include vp-1439 {
-    padding: 30px;
-  }
-
-  @include vp-767 {
-    padding: 20px 15px;
-  }
+  padding: 0;
 }
 
 .faq__list-item.is-active {
@@ -70,8 +62,8 @@
   color: $color-default-white;
 }
 
-.faq__list-item-content-wrapper  {
-  padding: 20px 0 0 0;
+.faq__list-item-content-wrapper {
+  padding: 0;
 }
 
 .faq__list-item-content-wrapper p {
@@ -80,7 +72,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 0;
 
   @include vp-1439 {
@@ -92,6 +84,59 @@
     font-size: 14px;
     line-height: 20px;
   }
+}
+
+.faq__list-item-title {
+  padding: 40px;
+  border-radius: 16px;
+  border: none;
+  background-color: $color-alabaster;
+  color: $color-cerulean-blue;
+  width: 100%;
+  text-align: start;
+
+  @include vp-1439 {
+    padding: 30px;
+  }
+
+  @include vp-767 {
+    padding: 20px 15px;
+  }
+
+}
+
+.faq__list-item.is-active > .faq__list-item-title {
+  background-color: $color-cerulean-blue;
+  color: $color-default-white;
+}
+
+.faq__list-item-title-wrapper {
+  position: relative;
+
+  &::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: $color-default-white;
+    background-color: $color-cerulean-blue;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.faq__list-item.is-active .faq__list-item-title-wrapper {
+  &::after {
+    content: "-";
+    color: $color-cerulean-blue;
+    background-color: $color-default-white;
+  }
+
 }
 
 .faq__list-item-title-wrapper h3 {
