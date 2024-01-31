@@ -1,0 +1,132 @@
+.news {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.news__title {
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  color: $color-cerulean-blue;
+
+  @include vp-1439 {
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.news__navigation-list {
+  @include list;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.news__navigation-link {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  color: $color-cerulean-blue-60;
+
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.24px;
+  }
+}
+
+.news__slider-list {
+  @include list;
+}
+
+
+.news .news__slider-item {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.news__slider-wrapper {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  z-index: 1;
+}
+
+.news__slider-img {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  z-index: -1;
+}
+
+.news__time {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+  color: $color-cerulean-blue;
+
+  @include vp-1439 {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.12px;
+    text-transform: uppercase;
+  }
+
+}
+
+.news__slider-item-title h3 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: $color-cerulean-blue;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include vp-1439 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+}
+
+.news__slider-item-description p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include vp-1439 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 14px
+  }
+}
