@@ -179,3 +179,11 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.reviews .reviews__swiper-scrollbar {
+  background-color: $color-cerulean-blue-20;
+}
+
+.reviews .swiper-scrollbar-drag {
+  background-color: $color-cerulean-blue;
+}
