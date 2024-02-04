@@ -29,7 +29,7 @@
           </a>
         </div>
         <div class="header__wrapper">
-          <button class="header__button btn btn--burger">
+          <button class="header__button btn btn--burger ">
             <span class="btn__text">Меню</span>
             <div class="btn__icon">
               <svg width="20" height="20" aria-hidden="true" focusable="false" role="img">
@@ -41,7 +41,12 @@
             <ul class="header__list">
               <li class="header__item"><a class="header__item-link" href="#">О проекте</a></li>
               <li class="header__item header__item--sub-menu">
-                <a class="header__item-link" href="#">Программы</a>
+                <a class="header__item-link" href="#">
+                  <span>Программы</span>
+                  <svg width="12" height="12" aria-hidden="true" focusable="false" role="img">
+                    <use href="/__spritemap#sprite-menu-arrow"></use>
+                  </svg>
+                </a>
                 <ul class="header__sub-list">
                   <li class="header__sub-list-item"><a class="header__sub-list-item-link" href="#">Стажировки</a></li>
                   <li class="header__sub-list-item"><a class="header__sub-list-item-link" href="#">Волонтёрство</a></li>
@@ -52,7 +57,12 @@
               <li class="header__item"><a class="header__item-link" href="#">Как поехать</a></li>
               <li class="header__item"><a class="header__item-link" href="#">Отзывы</a></li>
               <li class="header__item header__item--sub-menu">
-                <a class="header__item-link" href="#">Новости</a>
+                <a class="header__item-link" href="#">
+                  <span>Новости</span>
+                  <svg width="12" height="12" aria-hidden="true" focusable="false" role="img">
+                    <use href="/__spritemap#sprite-menu-arrow"></use>
+                  </svg>
+                </a>
                 <ul class="header__sub-list">
                   <li class="header__sub-list-item"><a class="header__sub-list-item-link" href="#">Общее</a></li>
                   <li class="header__sub-list-item"><a class="header__sub-list-item-link" href="#">Волонтёрство</a></li>
@@ -74,16 +84,22 @@
           <ul class="hero__slider swiper-wrapper">
             <li class="hero__slider-item swiper-slide">
               <div class="hero__slider-item-wrapper container">
-                <div class="hero__slider-pagination swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal" data-button="pagination-slider"></div>
+                <div class="hero__slider-pagination" data-button="pagination-slider"></div>
                 <div class="hero__slider-item-title text-content">
                   <h2>Глобальный профессиональный опыт обучения за рубежом</h2>
                 </div>
                 <div class="hero__slider-item-description text-content">
                   <p>Погрузитесь в академическую программу, проходя практику в разных городах, ощущая настоящий студенческий стиль жизни!</p>
+                  <a class="hero__slider-button btn btn--with-text" href="#">
+                    <span class="btn__text">подробнее</span>
+                    <div class="btn__icon">
+                      <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </div>
+                  </a>
                 </div>
-                <a class="hero__slider-button btn">
-                  <span>подробнее</span>
-                </a>
+
               </div>
               <div class="hero__slider-img">
                 <picture>
@@ -98,16 +114,21 @@
             </li>
             <li class="hero__slider-item swiper-slide">
               <div class="hero__slider-item-wrapper container">
-                <div class="hero__slider-pagination swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal" data-button="pagination-slider"></div>
+                <div class="hero__slider-pagination" data-button="pagination-slider"></div>
                 <div class="hero__slider-item-title text-content">
                   <h2>Волонтёрские программы – внесите свой вклад в общество</h2>
                 </div>
                 <div class="hero__slider-item-description text-content">
                   <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.</p>
+                  <a class="hero__slider-button btn btn--with-text" href="#">
+                    <span class="btn__text">подробнее</span>
+                    <div class="btn__icon">
+                      <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </div>
+                  </a>
                 </div>
-                <a class="hero__slider-button btn">
-                  <span>подробнее</span>
-                </a>
               </div>
               <div class="hero__slider-img">
                 <picture>
@@ -122,16 +143,21 @@
             </li>
             <li class="hero__slider-item swiper-slide">
               <div class="hero__slider-item-wrapper container">
-                <div class="hero__slider-pagination swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal" data-button="pagination-slider"></div>
+                <div class="hero__slider-pagination" data-button="pagination-slider"></div>
                 <div class="hero__slider-item-title text-content">
                   <h2>Программы стажировок в крупнейших компаниях мира</h2>
                 </div>
                 <div class="hero__slider-item-description text-content">
                   <p>Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.</p>
+                  <a class="hero__slider-button btn btn--with-text" href="#">
+                    <span class="btn__text">подробнее</span>
+                    <div class="btn__icon">
+                      <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </div>
+                  </a>
                 </div>
-                <a class="hero__slider-button btn">
-                  <span>подробнее</span>
-                </a>
               </div>
               <div class="hero__slider-img">
                 <picture>
@@ -158,7 +184,14 @@
             <h3>Наша цель</h3>
             <p>Наша деятельность направлена на повышение квалификации молодых специалистов на ранних и средних стадиях карьеры, предоставляя им инструменты для решения сложных проблем, с которыми сталкиваются в мире. Цель центра — наделить этих людей способностью инициировать значимые изменения.</p>
           </div>
-          <a class="about__btn btn" href="#">Подробнее о проекте</a>
+          <button class="about__btn btn btn--with-text" type="button">
+            <span class="btn__text">Подробнее о проекте</span>
+            <div class="btn__icon">
+              <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+                <use href="/__spritemap#sprite-arrow"></use>
+              </svg>
+            </div>
+          </button>
         </div>
         <ul class="about__features-list">
           <li class="about__features-item">
@@ -210,7 +243,14 @@
       </section>
       <section class="programs container" data-test="programs">
         <h2 class="programs__title">Программы</h2>
-        <a class="programs__btn btn" href="#" data-open-modal="about">подробнее о проекте</a>
+        <a class="programs__btn btn btn--with-text" href="#" data-open-modal="about">
+          <span class="btn__text">Все программы</span>
+          <div class="btn__icon">
+            <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
+          </div>
+        </a>
         <div class="programs__slider-wrapper swiper" data-swiper="programs">
           <ul class="programs__slider swiper-wrapper">
             <li class="programs__slider-item swiper-slide">
@@ -332,7 +372,14 @@
                   </div>
                   <div class="news__slider-item-description text-content">
                     <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
-                    <a class="news__slider-btn btn" href="#"><span class="visually-hidden">Нажми, чтобы узнать подробности этой программы.</span></a>
+                    <a class="news__slider-btn btn btn--secondary" href="#">
+                      <span class="visually-hidden">Нажми, чтобы узнать подробности этой программы.</span>
+                      <div class="btn__icon">
+                        <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+                          <use href="/__spritemap#sprite-arrow"></use>
+                        </svg>
+                      </div>
+                    </a>
                   </div>
 
                 </div>
@@ -355,7 +402,14 @@
                   </div>
                   <div class="news__slider-item-description text-content">
                     <p>Какие места посещают наши студенты весной</p>
-                    <a class="news__slider-btn btn" href="#"><span class="visually-hidden">Нажми, чтобы узнать подробности этой программы.</span></a>
+                    <a class="news__slider-btn btn btn--secondary" href="#">
+                      <span class="visually-hidden">Нажми, чтобы узнать подробности этой программы.</span>
+                      <div class="btn__icon">
+                        <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+                          <use href="/__spritemap#sprite-arrow"></use>
+                        </svg>
+                      </div>
+                    </a>
                   </div>
 
                 </div>
@@ -378,7 +432,14 @@
                   </div>
                   <div class="news__slider-item-description text-content">
                     <p>Программа помощи детям длительностью 4 месяца</p>
-                    <a class="news__slider-btn btn" href="#"><span class="visually-hidden">Нажми, чтобы узнать подробности этой программы.</span></a>
+                    <a class="news__slider-btn btn btn--secondary" href="#">
+                      <span class="visually-hidden">Нажми, чтобы узнать подробности этой программы.</span>
+                      <div class="btn__icon">
+                        <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+                          <use href="/__spritemap#sprite-arrow"></use>
+                        </svg>
+                      </div>
+                    </a>
                   </div>
 
                 </div>
@@ -401,7 +462,14 @@
                   </div>
                   <div class="news__slider-item-description text-content">
                     <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
-                    <a class="news__slider-btn btn" href="#"><span class="visually-hidden">Нажми, чтобы узнать подробности этой программы.</span></a>
+                    <a class="news__slider-btn btn btn--secondary" href="#">
+                      <span class="visually-hidden">Нажми, чтобы узнать подробности этой программы.</span>
+                      <div class="btn__icon">
+                        <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+                          <use href="/__spritemap#sprite-arrow"></use>
+                        </svg>
+                      </div>
+                    </a>
                   </div>
 
                 </div>
@@ -418,9 +486,21 @@
               </li>
             </ul>
             <div class="news__slider-nav" >
-              <div class="news__slider-button-prev swiper-button-prev" data-button="news-next"></div>
+              <button class="news__slider-button-prev btn btn--news-slider" data-button="news-next">
+                <div class="btn__icon">
+                  <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+                    <use href="/__spritemap#sprite-news-arrow"></use>
+                  </svg>
+                </div>
+              </button>
               <div class="news__slider-pagination swiper-pagination"></div>
-              <div class="news__slider-button-next swiper-button-next" data-button="news-prev"></div>
+              <button class="news__slider-button-next btn btn--news-slider" data-button="news-prev">
+                <div class="btn__icon">
+                  <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+                    <use href="/__spritemap#sprite-news-arrow"></use>
+                  </svg>
+                </div>
+              </button>
             </div>
           </div>
         </div>
@@ -759,7 +839,14 @@
                 <span class="feedback__control-mark"></span>
                 <span class="feedback__control-label">Я согласен на обработку моих персональных данных</span>
               </label>
-              <button type="submit"><span>отправить</span></button>
+              <button class="btn btn--with-text btn--form" type="submit">
+                <span class="btn__text btn__text--form">отправить</span>
+                <div class="btn__icon btn__icon--form">
+                  <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+                    <use href="/__spritemap#sprite-arrow"></use>
+                  </svg>
+                </div>
+              </button>
             </form>
           </div>
           <div class="feedback_img">

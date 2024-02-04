@@ -13,16 +13,54 @@
     outline: none;
   }
 
+  @include disabled {
+    pointer-events: none;
+    cursor: default;
+    color: $color-mischka;
+    border-color: $color-mischka;
+  }
+
   &--burger {
     gap: 20px;
     padding: 4px 3px 4px 20px;
     border-radius: 30px;
     background-color: $color-default-white;
+
+    &.is-open {
+      width: 286px;
+      justify-content: space-between;
+      color: $color-default-white;
+      background-color: $color-cerulean-blue;
+    }
   }
 
-  @include disabled {
-    pointer-events: none;
-    cursor: default;
+  &--with-text {
+    border-radius: 30px;
+    padding: 3px 3px 3px 29px;
+    gap: 33px;
+
+    @include hover-focus {
+      background-color: $color-cerulean-blue;
+      color: $color-default-white;
+    }
+
+    @include active {
+      background-color: $color-cerulean-blue;
+      color: $color-white-70;
+    }
+
+    @include disabled {
+      pointer-events: none;
+      cursor: default;
+      color: $color-mischka;
+      border-color: $color-mischka;
+
+    }
+  }
+
+  &--form {
+    border: 1px solid $color-default-white;
+    color: $color-default-white;
   }
 }
 
@@ -36,6 +74,23 @@
   line-height: 14px;
   letter-spacing: .28px;
   text-transform: uppercase;
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.24px;
+  }
+
+  &--form {
+    margin-left: auto;
+  }
+
+  @include disabled {
+    pointer-events: none;
+    cursor: default;
+    color: $color-mischka;
+
+  }
 }
 
 .btn__icon {
@@ -46,9 +101,57 @@
   background-color: $color-cerulean-blue;
   border-radius: 50%;
   padding: 13px;
+  width: 46px;
+  height: 46px;
 
   @include hover-focus {
     color: $color-cerulean-blue;
     background-color: $color-default-white;
+    transform: rotate(45deg);
   }
+
+  @include active {
+    background-color: $color-default-white;
+    color: $color-cerulean-blue-70;
+    transform: rotate(45deg);
+  }
+
+  @include disabled {
+    background-color: $color-white-60;
+    color: $color-default-white;
+  }
+
+  &--form {
+    background-color: $color-default-white;
+    color: $color-cerulean-blue;
+    margin-left: auto;
+  }
+
+  &--secondary {
+    padding: 10px;
+  }
+
+  .is-open & {
+    background-color: $color-default-white;
+    color: $color-cerulean-blue;
+  }
+}
+
+
+.btn--with-text:hover .btn__icon,
+.btn--with-text:focus .btn__icon {
+  color: $color-cerulean-blue;
+  background-color: $color-default-white;
+  transform: rotate(45deg);
+}
+
+.btn--with-text:active .btn__icon {
+  background-color: $color-default-white;
+  color: $color-cerulean-blue-70;
+  transform: rotate(45deg);
+}
+
+.btn--with-text:disabled .btn__icon {
+  color: $color-white-60;
+  background-color: $color-mischka;
 }
