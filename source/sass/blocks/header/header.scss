@@ -1,5 +1,5 @@
 .header {
-z-index: 3;
+  z-index: 3;
 }
 
 .header__container {
@@ -33,6 +33,7 @@ z-index: 3;
 
   .is-open > & {
     @include list;
+
     padding-top: 20px;
     padding-left: 16px;
     display: flex;
@@ -44,13 +45,14 @@ z-index: 3;
 .header__nav {
   display: none;
 
-  &.is-open{
+  & .is-open {
     display: block;
   }
 }
 
 .header__list {
   @include list;
+
   display: flex;
   flex-direction: column;
   row-gap: 28px;

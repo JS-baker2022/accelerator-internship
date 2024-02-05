@@ -92,6 +92,7 @@
 
 .grant__conditions-list {
   @include list;
+
   display: flex;
   flex-direction: column;
   row-gap: 23px;

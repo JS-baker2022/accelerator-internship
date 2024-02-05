@@ -2,6 +2,7 @@
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
 .feedback__container {
   width: 100%;
   max-width: $vp-1440;
@@ -19,7 +20,6 @@
     padding: 0;
     justify-items: center;
   }
-
 }
 
 .feedback__text-content {
@@ -35,14 +35,13 @@
   @include vp-1439 {
     padding: 50px 45px;
     width: 442px;
-
   }
 
   @include vp-767 {
     padding: 50px 15px;
     border-radius: 16px;
     width: 290px;
-    }
+  }
 }
 
 .feedback__title {
@@ -144,12 +143,12 @@
   }
 }
 
-.feedback_img {
+.feedback__img {
   border-radius: 16px;
   z-index: -1;
   grid-area: 1 / -1;
 }
 
-.feedback_img img {
+.feedback__img img {
   width: 100%;
 }

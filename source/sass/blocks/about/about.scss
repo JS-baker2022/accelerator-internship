@@ -19,11 +19,11 @@
 
 .about__container {
   display: grid;
-  grid-template-areas:  "title description"
-                        "title btn";
+  grid-template-areas:
+    "title description"
+    "title btn";
   row-gap: 33px;
   column-gap: 48px;
-
 }
 
 .about__title {
@@ -128,7 +128,6 @@
   @include vp-767 {
     font-size: 14px;
   }
-
 }
 
 .about__btn {
@@ -138,14 +137,15 @@
 
 
 .about__features-list {
-    @include list;
-    background-color: $color-cerulean-blue;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 72px 106px 25px 126px;
-    column-gap: 51px;
-    row-gap: 44px;
+  @include list;
+
+  background-color: $color-cerulean-blue;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 72px 106px 25px 126px;
+  column-gap: 51px;
+  row-gap: 44px;
 }
 
 .about__features-item {
@@ -163,7 +163,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .about__wrapper {
@@ -184,7 +183,7 @@
   text-transform: uppercase;
 }
 
-.about__wrapper p{
+.about__wrapper p {
   margin-top: 0;
   margin-bottom: 0;
   max-width: 190px;
