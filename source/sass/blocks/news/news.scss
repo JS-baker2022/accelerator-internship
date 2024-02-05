@@ -1,6 +1,5 @@
 .news {
-  padding-top: 120px;
-  padding-bottom: 60px;
+  padding-top: 124px;
 }
 
 .news__title {
@@ -10,6 +9,8 @@
   font-weight: 400;
   line-height: 50px;
   color: $color-cerulean-blue;
+  margin-top: 0;
+  margin-bottom: 0;
 
   @include vp-1439 {
     font-size: 34px;
@@ -29,6 +30,8 @@
   gap: 30px;
   justify-content: center;
   align-items: center;
+  padding-top: 54px;
+  padding-bottom: 46px
 }
 
 .news__navigation-link {
@@ -57,7 +60,7 @@
 .news__slider-list {
   @include list;
 
-  margin-bottom: 50px;
+  margin-bottom: 31px;
 }
 
 

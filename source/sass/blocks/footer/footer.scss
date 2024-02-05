@@ -17,7 +17,7 @@
     "copyright copyright copyright"
     /52px 1fr 1fr;
   column-gap: 52px;
-  row-gap: 25px;
+  row-gap: 27px;
 }
 
 .footer__logo {
@@ -116,7 +116,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
-  color: $color-charcoal;
+  color: $color-charcoal-60;
 
   @include vp-1439 {
     font-size: 12px;

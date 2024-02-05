@@ -1,6 +1,6 @@
 .faq {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  margin-top: 114px;
+  margin-bottom: 60px;
 
   @include vp-1439 {
     padding-top: 30px;
@@ -22,7 +22,7 @@
   color: $color-cerulean-blue;
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 60px;
+  padding-bottom: 67px;
 
   @include vp-1439 {
     font-size: 34px;
@@ -55,6 +55,7 @@
   border-radius: 16px;
   color: $color-cerulean-blue;
   padding: 0;
+  margin-bottom: 10px;
 }
 
 .faq__list-item.is-active {
@@ -72,8 +73,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
-  margin-top: 30px;
+  margin-top: 17px;
   margin-bottom: 0;
+  width: 690px;
 
   @include vp-1439 {
     font-size: 16px;
@@ -87,13 +89,18 @@
 }
 
 .faq__list-item-title {
-  padding: 40px;
+  padding: 41px 40px 43px 39px;
   border-radius: 16px;
   border: none;
   background-color: $color-alabaster;
   color: $color-cerulean-blue;
   width: 100%;
   text-align: start;
+
+  &--long-string {
+    padding-top: 31px;
+    padding-bottom: 33px;
+  }
 
   @include vp-1439 {
     padding: 30px;
@@ -115,17 +122,21 @@
   &::after {
     content: "+";
     position: absolute;
-    right: 0;
-    top: 0;
+    right: -1px;
+    top: -2px;
     width: 40px;
     height: 40px;
-    font-size: 30px;
+    font-size: 36px;
     color: $color-default-white;
     background-color: $color-cerulean-blue;
     border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    .faq__list-item-title--long-string & {
+      top: 8px;
+    }
   }
 }
 
@@ -144,6 +155,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 34px;
+  width: 600px;
 
   @include vp-1439 {
     font-size: 22px;
@@ -154,4 +166,8 @@
     font-size: 16px;
     line-height: 18px;
   }
+}
+
+.faq__list-item.is-active .faq__list-item-title {
+  padding-bottom: 32px;
 }

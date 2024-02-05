@@ -13,7 +13,8 @@
   max-width: 498px;
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  padding-top: 4px;
+  row-gap: 29px;
 }
 
 .grant__title {
@@ -36,7 +37,7 @@
 }
 
 .grant__description {
-  padding-bottom: 10px;
+  padding-bottom: 4px;
 }
 
 .grant__description p {
@@ -68,6 +69,7 @@
 
 .grant__conditions {
   max-width: 498px;
+  padding-top: 8px;
 }
 
 .grant__conditions-title {
@@ -98,6 +100,7 @@
   row-gap: 23px;
   padding-top: 55px;
   counter-reset: css-counter 0;
+  padding-left: 20px;
 }
 
 .grant__conditions-item {
@@ -108,22 +111,26 @@
   color: $color-alabaster;
   border: 1px solid $color-alabaster;
   border-radius: 16px;
-  padding: 30px 25px;
   counter-increment: css-counter 1;
   position: relative;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 24px;
+  padding-right: 25px;
+  display: flex;
 
   &::after {
     content: counter(css-counter) "";
     position: absolute;
-    top: -20px;
-    left: -15px;
+    top: -18px;
+    left: -20px;
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0.22px;
     text-transform: uppercase;
-    padding: 14px;
+    padding: 12px 14px;
     background-color: $color-cerulean-blue;
   }
 
@@ -136,4 +143,8 @@
     line-height: 20px;
     padding: 24px 25px;
   }
+}
+
+.grant__conditions-item-content {
+  width: 417px;
 }
