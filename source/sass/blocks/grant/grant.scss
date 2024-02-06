@@ -7,6 +7,12 @@
   padding-bottom: 120px;
   display: flex;
   column-gap: 138px;
+
+  @include vp-1439 {
+    flex-direction: column;
+    padding-top: 94px;
+    padding-bottom: 100px;
+  }
 }
 
 .grant__bunner {
@@ -15,6 +21,10 @@
   flex-direction: column;
   padding-top: 4px;
   row-gap: 29px;
+
+  @include vp-1439 {
+    row-gap: 28px;
+  }
 }
 
 .grant__title {
@@ -38,6 +48,10 @@
 
 .grant__description {
   padding-bottom: 4px;
+
+  @include vp-1439 {
+    padding-bottom: 8px;
+  }
 }
 
 .grant__description p {
@@ -65,11 +79,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include vp-1439 {
+    width: 678px;
+  }
+}
+
+.grant__img img {
+  max-width: initial;
 }
 
 .grant__conditions {
   max-width: 498px;
   padding-top: 8px;
+
+  @include vp-1439 {
+    padding-top: 45px;
+    max-width: 678px;
+  }
 }
 
 .grant__conditions-title {
@@ -101,6 +128,14 @@
   padding-top: 55px;
   counter-reset: css-counter 0;
   padding-left: 20px;
+
+  @include vp-1439 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 42px;
+    column-gap: 46px;
+    row-gap: 25px;
+  }
 }
 
 .grant__conditions-item {
@@ -136,6 +171,9 @@
 
   @include vp-1439 {
     line-height: 20px;
+    width: 305px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 
   @include vp-767 {

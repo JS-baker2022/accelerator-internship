@@ -18,6 +18,15 @@
     /52px 1fr 1fr;
   column-gap: 52px;
   row-gap: 27px;
+
+  @include vp-1439 {
+    grid-template:
+      "logo nav nav"
+      "copyright copyright social"
+      /52px 1fr 1fr;
+    column-gap: 96px;
+    row-gap: 25px;
+  }
 }
 
 .footer__logo {
@@ -54,6 +63,10 @@
   gap: 30px;
   align-items: center;
   justify-content: center;
+
+  @include vp-1439 {
+    gap: 16px;
+  }
 }
 
 .footer__nav-list-link {
@@ -89,6 +102,10 @@
   gap: 20px;
   align-items: center;
   justify-content: flex-end;
+
+  @include vp-1439 {
+    gap: 10px;
+  }
 }
 
 .footer__social-list-link {
@@ -107,6 +124,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include vp-1439 {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
 }
 
 .footer__copyright {

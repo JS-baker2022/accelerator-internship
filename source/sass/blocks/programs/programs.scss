@@ -6,6 +6,11 @@
   padding-top: 60px;
   padding-bottom: 132px;
   row-gap: 40px;
+
+  @include vp-1439 {
+    padding-bottom: 93px;
+  }
+
 }
 
 .programs__title {

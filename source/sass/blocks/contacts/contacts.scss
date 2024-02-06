@@ -5,6 +5,12 @@
   display: flex;
   flex-direction: column;
   gap: 72px;
+
+  @include vp-1439 {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    gap: 57px;
+  }
 }
 
 .contacts__container {
@@ -13,6 +19,11 @@
   position: relative;
   align-items: flex-start;
   padding-top: 14px;
+
+  @include vp-1439 {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
 
   &::before {
     content: "";
@@ -38,6 +49,7 @@
 
   @include vp-1439 {
     font-size: 34px;
+    width: 678px;
   }
 
   @include vp-767 {
@@ -51,6 +63,10 @@
   justify-content: space-between;
   color: $color-alabaster;
   width: 604px;
+
+  @include vp-1439 {
+    width: 678px;
+  }
 }
 
 .contacts__adress-content {
@@ -58,6 +74,10 @@
   flex-direction: column;
   row-gap: 15px;
   width: 263px;
+
+  @include vp-1439 {
+    row-gap: 18px;
+  }
 
   @include vp-767 {
     width: 230px;
@@ -99,6 +119,10 @@
   flex-direction: column;
   row-gap: 15px;
   width: 132px;
+
+  @include vp-1439 {
+    row-gap: 18px;
+  }
 }
 
 .contacts__adress-phone-title {
@@ -136,6 +160,10 @@
   flex-direction: column;
   row-gap: 15px;
   width: 104px;
+
+  @include vp-1439 {
+    row-gap: 18px;
+  }
 }
 
 .contacts__adress-email-title {
