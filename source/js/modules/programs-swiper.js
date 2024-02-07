@@ -1,50 +1,49 @@
 import Swiper from 'swiper';
-import {Navigation, Scrollbar, Keyboard} from 'swiper/modules';
+import {Scrollbar, Navigation} from 'swiper/modules';
 
-const programsSlider = document.querySelector('[data-swiper="programs"]');
+const slider = document.querySelector('[data-swiper="programs"]');
+const buttonNext = document.querySelector('[data-button="next-programs"]');
+const buttonPrev = document.querySelector('[data-button="prev-programs"]');
+const scrollbar = slider.querySelector('[data-scrollbar="programs"]');
 
-const setSliderPrograms = () =>
-  new Swiper(programsSlider, {
-    modules: [Navigation, Scrollbar, Keyboard],
-    direction: 'horizontal',
-    navigation: {
-      nextEl: '[data-button="programs-next"]',
-      prevEl: '[data-button="programs-prev"]',
+const setSlider = () => new Swiper(slider, {
+  modules: [Scrollbar, Navigation],
+  scrollbar: {
+    el: scrollbar,
+    draggable: true,
+    dragSize: 392,
+  },
+  navigation: {
+    nextEl: buttonNext,
+    prevEl: buttonPrev,
+  },
+  breakpoints: {
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+      allowTouchMove: false,
     },
-    scrollbar: {
-      el: '.programs__slider-scrollba',
-      hide: false,
-      dragSize: 392,
-    },
-    keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-    },
-    breakpoints: {
-      1440: {
-        slidesPerView: 3,
-        spaceBetween: 32,
-        allowTouchMove: false,
-      },
-      768: {
-        slidesPerView: 'auto',
-        spaceBetween: 30,
-        allowTouchMove: true,
-        scrollbar: {
-          dragSize: 324,
-        },
-      },
-      320: {
-        slidesPerView: 1,
-        allowTouchMove: true,
+    768: {
+      spaceBetween: 30,
+      slidesPerView: 'auto',
+      scrollbar: {
+        dragSize: 324,
       },
     },
-  });
-
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 15,
+      scrollbar: {
+        enabled: false,
+      },
+    },
+  },
+});
 
 const initSliderPrograms = () => {
-  if (document.body.contains(programsSlider)) {
-    setSliderPrograms();
+  if (document.body.contains(slider)) {
+    setSlider();
   }
 };
+
 export {initSliderPrograms};

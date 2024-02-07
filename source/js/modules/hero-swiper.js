@@ -26,7 +26,7 @@ const setSliderHero = () => new Swiper(heroSlider,{
   loop: true,
   breakpoints: {
     1440: {
-      allowTouchMove: true,
+      allowTouchMove: false,
     },
     768: {
       allowTouchMove: true,
