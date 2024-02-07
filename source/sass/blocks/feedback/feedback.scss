@@ -101,6 +101,11 @@
   }
 }
 
+.feedback__select option:first-child {
+  display: none;
+  opacity: 0;
+}
+
 .feedback__textarea-wrapper {
   display: flex;
   flex-direction: column;

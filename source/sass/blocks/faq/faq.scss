@@ -133,11 +133,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    .faq__list-item-title--long-string & {
-      top: 8px;
-    }
   }
+}
+
+.faq__list-item-title--long-string .faq__list-item-title-wrapper::after {
+  top: 8px;
 }
 
 .faq__list-item.is-active .faq__list-item-title-wrapper {

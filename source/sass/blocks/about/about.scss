@@ -31,7 +31,7 @@
       "title"
       "description"
       "btn";
-      row-gap: 30px;
+    row-gap: 30px;
   }
 }
 
@@ -44,7 +44,7 @@
 
   @include vp-1439 {
     gap: 24px;
-    max-width: 498px
+    max-width: 498px;
   }
 }
 
@@ -145,7 +145,7 @@
   justify-self: start;
 
   @include vp-1439 {
-    margin-top: 7px
+    margin-top: 7px;
   }
 }
 
@@ -206,7 +206,6 @@
 
   &--small {
     width: 358px;
-
   }
 
   @include vp-1439 {
@@ -276,14 +275,12 @@
 
   @include vp-1439 {
     margin-left: 0;
-    width: 230px
+    width: 230px;
   }
 }
 
 .about__wrapper--small h4 {
-
   @include vp-1439 {
     width: 105px;
   }
-
 }

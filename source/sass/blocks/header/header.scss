@@ -44,10 +44,10 @@
 
 .header__nav {
   display: none;
+}
 
-  & .is-open {
-    display: block;
-  }
+.header__nav.is-open {
+  display: block;
 }
 
 .header__list {
